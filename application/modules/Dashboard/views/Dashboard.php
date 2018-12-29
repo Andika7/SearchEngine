@@ -1,5 +1,6 @@
 <body style="background-color: #f1f2f6;">
-    <div class="docs-header">
+
+    <div class="docs-header-custom">
       <!--nav-->
       <nav class="navbar navbar-default navbar-custom" role="navigation">
         <div class="container">
@@ -24,18 +25,20 @@
       <div class="topic">
         <div class="container">
 			<div class="col-md-8">
-			  <h3>Documentation</h3>
-			  <h4>The complete style of the Bootflat Framework</h4>
+			  <h3>Cari Berita</h3>
+			  <h4>Cari berita dari mana aja</h4>
 			</div>
-			<div class="col-md-4">
-          </div>
-        </div>
-        <div class="topic__infos">
-          <div class="container">
-            Bootflat offers over a dozen reusable components, which can be combined with each other.
-          </div>
         </div>
       </div>
     </div>
+
+    <div style="margin:50px auto; width:600px;">
+    <div class="input-group form-search">
+      <input type="text" class="form-control search-query">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-danger" data-type="last">Search</button>
+      </span>
+    </div>
+  </div>
 
 </body>

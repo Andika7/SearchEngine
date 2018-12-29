@@ -1,0 +1,21 @@
+.docs-header-custom {
+    padding-top: 50px;
+    border-top: 1px solid #ec4433;
+    background: url(../img/res.png) repeat 0 0;
+}
+
+.navbar-custom .nav li a.current {
+    border-bottom: 4px solid #ffffff;
+}
+
+.navbar-custom {
+  background-color: rgba(244, 71, 71, 0.61);
+}
+
+.navbar-custom .nav li a {
+  color: #ffffff;
+}
+
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
+    color: #000000;
+}
