@@ -23,10 +23,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url']=((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=="on") ? "https":"http");
-$config['base_url'].="://". $_SERVER['HTTP_HOST'];
-$config['base_url'].=str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
-//$config['base_url'] = '';
+if (defined('STDIN'))
+{
+   // You should hardcode the base url for cli, otherwise it will fails.
+   $config['base_url'] = "http://localhost/SearchEngine/";
+}
+else
+{
+   $config['base_url'] = "http".((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "s" : "")."://".$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+}//$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------

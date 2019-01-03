@@ -1,4 +1,10 @@
-<body style="background-color: #f1f2f6;">
+<script type="text/javascript">
+<?php
+     include APPPATH ."modules/Dashboard/ajax/Dashboard.js";
+?>
+</script>
+
+<body style="background-color: #ffffff;">
 
     <div class="docs-header-custom">
       <!--nav-->
@@ -15,8 +21,7 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="nav-link current" href="getting-started.html">Dashboard</a></li>
-              <li><a class="nav-link" href="documentation.html">Result</a></li>
+              <li><a class="nav-link current" href="">Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -25,19 +30,39 @@
       <div class="topic">
         <div class="container">
 			<div class="col-md-8">
-			  <h3>Cari Berita</h3>
-			  <h4>Cari berita dari mana aja</h4>
+			  <h3>Find News</h3>
+			  <h4> search various news here</h4>
 			</div>
         </div>
+      <form action="#" method="post" onsubmit="return false">
+        <div style="margin:50px auto; width:600px;">
+        <div class="input-group form-search">
+          <input name="cari" id="cari" type="text" class="form-control search-query">
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-danger" data-type="last">Search</button>
+          </span>
+        </div>
       </div>
+      <h5 style="text-align: center; color:#ffffff">Range Search</h5>
+      <div style="margin:0 auto; width:100px;">
+      <select name="top-ranking" id="rank" class="selecter_3">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="75">75</option>
+      </select>
+      </div>
+    </form>
+    </div>
     </div>
 
-    <div style="margin:50px auto; width:600px;">
-    <div class="input-group form-search">
-      <input type="text" class="form-control search-query">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-danger" data-type="last">Search</button>
-      </span>
+    <div class="row">
+    <div class="col-md-6" style="margin:70px 60px auto;" id="content">
+
+    </div>
+    <div class="col-md-4" style="margin:70px 0px 0px 30px;">
+      <div ><h5 id="time" style=""></h5></div>
+      <div id="found"></div>
     </div>
   </div>
 

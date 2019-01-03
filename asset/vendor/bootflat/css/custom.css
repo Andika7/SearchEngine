@@ -9,7 +9,7 @@
 }
 
 .navbar-custom {
-  background-color: rgba(244, 71, 71, 0.61);
+  background-color: #e14030;
 }
 
 .navbar-custom .nav li a {
@@ -18,4 +18,9 @@
 
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
     color: #000000;
+}
+
+.topic {
+    position: relative;
+    padding: 0px 0 20px;
 }
