@@ -40,8 +40,6 @@ class Dashboard extends CI_Controller {
 
 		$a=run($query,$rank);
 
-
-
 		$name=array();
 		$rank=array();
 		for ($i=5; $i < sizeof($a)-1 ; $i++) {

@@ -17,7 +17,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="<?php echo base_url() ?>asset/vendor/bootflat/img/logo.png" height="40"></a>
+            <a class="navbar-brand" href=""><img src="<?php echo base_url() ?>asset/vendor/bootflat/img/a-logo-1.png" height="40"></a>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -48,8 +48,10 @@
       <select name="top-ranking" id="rank" class="selecter_3">
         <option value="10">10</option>
         <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
         <option value="50">50</option>
-        <option value="75">75</option>
+        <option value="100">100</option>
       </select>
       </div>
     </form>
